@@ -1,41 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Tip Calculator</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <div class="container">
-        <h3>TIP CALCULATOR</h3>
-        <form action="#">
+ 
+        <h3 class="header">TIP CALCULATOR</h3>
+ 
+      <form action="#">
         <label for="bill">How much was your bill?</label>
-        $ <input type="text" name="bill" id="bill" >
+        <input type="text" name="bill" id="bill" placeholder="$" onfocus="this.value=''"/>
         <label for="service">How was your service?</label>
         <select name="service" id="service">
-            <option value="Choose An Option"></option>
-            <option value="30% - Outstanding"></option>
-            <option value="20% - Good"></option>
-            <option value="15% - It was OK"></option>
-            <option value="10% - Bad"></option>
-            <option value="5% - Terrible"></option>
+          <option value="Choose An Option" disabled>Choose An Option</option>
+          <option value="30% - Outstanding">30% - Outstanding</option>
+          <option value="20% - Good">20% - Good</option>
+          <option value="15% - It was OK">15% - It was OK</option>
+          <option value="10% - Bad">10% - Bad</option>
+          <option value="5% - Terrible">5% - Terrible</option>
         </select>
         <label for="people">How many people are sharing the bill?</label>
-        <input type="text" id="people"> people
+        <input type="text" id="people" placeholder="people" onfocus="this.value=''" />
         <button class="calculate">Calculate</button>
-        <div class="amount">
-            <h3>TIP AMOUNT</h3>
-            <p class="amount tip"></p>
-            <h4>each</h4>
-        </div>
-        </form>
+      </form>
+      <div class="amount">
+        <h3>TIP AMOUNT</h3>
+        <p class="amount tip"></p>
+        <h4>each</h4>
+      </div>
     </div>
-    
-
 
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
