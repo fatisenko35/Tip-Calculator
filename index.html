@@ -17,24 +17,25 @@
  
       <form action="#">
         <label for="bill">How much was your bill?</label>
-        <input type="text" name="bill" id="bill" placeholder="$" onfocus="this.value=''"/>
+        <input type="text" name="bill" id="bill" placeholder="$" onfocus="this.value=''"required>
         <label for="service">How was your service?</label>
-        <select name="service" id="service">
+        <select name="service" id="service" required>
           <option value="Choose An Option" disabled>Choose An Option</option>
-          <option value="30% - Outstanding">30% - Outstanding</option>
-          <option value="20% - Good">20% - Good</option>
-          <option value="15% - It was OK">15% - It was OK</option>
-          <option value="10% - Bad">10% - Bad</option>
-          <option value="5% - Terrible">5% - Terrible</option>
+          <option value="0.30">30% - Outstanding</option>
+          <option value="0.20">20% - Good</option>
+          <option value="0.15">15% - It was OK</option>
+          <option value="0.10">10% - Bad</option>
+          <option value="0.05">5% - Terrible</option>
         </select>
         <label for="people">How many people are sharing the bill?</label>
-        <input type="text" id="people" placeholder="people" onfocus="this.value=''" />
+        <input type="text" id="people" placeholder="people" onfocus="this.value=''" required/>
         <button class="calculate">Calculate</button>
       </form>
       <div class="amount">
+        <button class="restart">Restart</button>
         <h3>TIP AMOUNT</h3>
         <p class="amount tip"></p>
-        <h4>each</h4>
+        <h4 id="each">each</h4>
       </div>
     </div>
 
