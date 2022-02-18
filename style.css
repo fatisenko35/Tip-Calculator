@@ -7,10 +7,8 @@ body{
     background-color: #F3F8FF;
     display: flex;
     justify-content: center;
-    /* font-family: 'Bitter', serif; */
 }
 .container{
-
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
@@ -19,8 +17,7 @@ body{
     width: 25rem;
     background-color: #DEECFF;
     border-radius: 1rem;
-    font-family: 'Bitter', serif;
-    
+    font-family: 'Bitter', serif;  
 }
 
 .header{
@@ -45,22 +42,21 @@ input,select{
     border-radius: 0.25rem;
   
 }
+select{
+    background-color: white;
+}
 
 label{
 
     display: block;
     margin-top: 1rem;
     font-size: 1.1rem;
-    font-family: inherit;
-    
-    
-    
+    font-family: inherit; 
 }
 
 p{
     display: inline-block;
     margin-top: 0.1rem;
-
 }
 button{
     margin: auto;
@@ -74,8 +70,7 @@ button{
     color: white;
     border-radius: 0.75rem;
     font-size: 1rem;
-    font-family: inherit;
-    
+    font-family: inherit;   
 }
 
 .amount{
@@ -83,7 +78,6 @@ button{
     margin: auto;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    display: none;
-    
+    display: none;   
 }
 
